@@ -1,0 +1,291 @@
+/** 
+ * 去掉常用标签的默认边距
+ */
+html,body,div,p,span,a,img,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,header,footer,nav,section,article,video,button,input,table, td, tr {
+  padding: 0;
+  margin: 0;
+}
+
+/** 
+ * 去掉list的默认样式
+ */
+ol,ul,li {
+  list-style: none;
+}
+
+/** 
+ * 去掉list的默认样式
+ */
+input {
+  line-height: normal;
+}
+
+/** 
+ * 去掉table的边框样式
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** 
+ * 去掉table的边框样式
+ */
+td,th {
+  padding: 0;
+}
+/** 
+ * 移动端的默认使用无衬线字体sans-serif
+ * 规定一个 aspect 值，这样就可以保持首选字体的 x-height
+ */
+html {
+  font-family: sans-serif;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/**  
+ * 默认为100%的宽度
+ * 10号文字 完成后1rem = 10px
+ */
+html, body {
+  width: 100%;
+  height: auto;
+  font-size: 62.5%;
+}
+
+/** 
+ * 去掉点击屏幕的时候点击区域的显示
+ */
+a, img, button, input {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+/**  
+ * 去掉ie10的灰色背景
+ */
+a {
+  background-color: transparent;
+}
+
+/** 
+ * 设置部分元素在ie下面按块显示
+ * TODO: menu, hgroup, details, summary这部分标签的兼容设备覆盖率很低，如果覆盖率增高可以打开注释
+ */
+ 
+/*details（不显示详细） 定义描述文档或文档某个部分的细节，summary与之配合是标题显示[只兼容ios和chrome]*/
+/*menu 目前所有浏览器均不支持；*/
+/*main ie不支持*/
+/*figure文档中插图的图像，带有一个标题figcaption*/
+article, aside, figcaption, figure, footer, header, nav, section, main {
+  display: block;
+}
+
+/** 
+ * 兼容ie8.9让他们显示成行内块元素
+ * 设置Chrome, Firefox, Opera 元素放置在父元素的基线上
+ */
+audio, canvas, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/**  
+ * 设置标签加粗
+ */
+b, strong {
+  font-weight: bold;
+}
+
+/** 
+ * 去掉边框线，在ie8,9,10里面如果a标签包裹img会含有边框线 
+ */
+img {
+  border: 0;
+}
+
+/** 
+ * 突出显示的默认样式 
+ */
+mark {
+  background: #f6f6f6;
+  color: #000;
+}
+
+/** 
+ * 去掉a链接点击的时候外边框
+ */
+a:active, a:hover {
+  outline: 0;
+}
+
+/**  
+ * 统一不显示该元素
+ * opera,ie默认会显示该元素
+ */
+template {
+  display: none;
+}
+/*
+ * 左浮动 
+ */
+.float-l {
+  float: left;
+}
+
+/*
+ * 右浮动 
+ */
+.float-r {
+  float: right;
+}
+
+/*
+ * 清除浮动 
+ * 不兼容ie6，7
+ */
+.float-c:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  content: '';
+}
+
+/*
+ * 相对定位
+ */
+.position-r {
+  position: relative;
+}
+
+/*
+ * 绝对定位
+ */
+.position-a {
+  position: absolute;
+}
+
+/*
+ * 固定定位
+ */
+.position-f {
+  position: fixed;
+}
+
+/*
+ * 宽度设置为100% 
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.width-100 {
+  width: 100%;
+}
+
+/*
+ * 宽度设置为90% 
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.width-100 {
+  width: 90%;
+}
+
+/*
+ * 宽度设置为20% (这个一般在4列的时候会有20%的宽度和4%的边距)
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.width-20 {
+  width: 20%;
+}
+
+/*
+ * 宽度设置为30% (这个一般在3列的时候会有30%的宽度和2%的边距)
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.width-30 {
+  width: 30%;
+}
+
+/*
+ * 外边距4%
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.margin-4 {
+  margin-left: 4%;
+}
+
+/*
+ * 外边距2%
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.margin-2 {
+  margin-left: 2%;
+}
+
+/*
+ * 等分N列内容
+ * 如果设置这个里面的元素会
+ */
+.collection {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  flex-direction: column;
+}
+.collection .col-row {
+  -moz-box-flex: 1.0;
+  -webkit-box-flex: 1.0;
+  box-flex: 1.0;
+}
+
+/*
+ * 内边距和边框都会计算在宽高之内 
+ */
+.boxs-bor {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+/*
+ * 内边距和边框都会计算在宽高之外 
+ */
+.boxs-cont {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+} 
+/*
+ * 设置文字的大小，后面的数字是根据px规定的，会自动换算成rem的 
+ * 依赖default.css里面的body上面的文字的62.5%
+ * 1rem = 10px
+ */
+.fonts-12 {
+  font-size: 1.2rem;
+}
+
+.fonts-14 {
+  font-size: 1.4rem;
+}
+
+.fonts-16 {
+  font-size: 1.6rem;
+}
+
+.fonts-30 {
+  font-size: 3rem;
+}
+
+.fonts-50 {
+  font-size: 5rem;
+}
+
+/*
+ * 设置文字加粗
+ */
+.fontw {
+  font-weight: bold;
+}

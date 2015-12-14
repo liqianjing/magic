@@ -1,0 +1,33 @@
+{
+  "name": "magic",
+  "version": "0.0.1",
+  "description": "css modules separated",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liqianjing/magic.git"
+  },
+  "keywords": [
+    "magic"
+  ],
+  "author": "liqian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liqianjing/magic/issues"
+  },
+  "homepage": "https://github.com/liqianjing/magic#readme"
+}

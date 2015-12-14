@@ -1,0 +1,36 @@
+/** 
+ * 去掉常用标签的默认边距
+ */
+html,body,div,p,span,a,img,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,header,footer,nav,section,article,video,button,input,table, td, tr {
+  padding: 0;
+  margin: 0;
+}
+
+/** 
+ * 去掉list的默认样式
+ */
+ol,ul,li {
+  list-style: none;
+}
+
+/** 
+ * 去掉list的默认样式
+ */
+input {
+  line-height: normal;
+}
+
+/** 
+ * 去掉table的边框样式
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** 
+ * 去掉table的边框样式
+ */
+td,th {
+  padding: 0;
+}

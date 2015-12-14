@@ -1,0 +1,95 @@
+/** 
+ * 移动端的默认使用无衬线字体sans-serif
+ * 规定一个 aspect 值，这样就可以保持首选字体的 x-height
+ */
+html {
+  font-family: sans-serif;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/**  
+ * 默认为100%的宽度
+ * 10号文字 完成后1rem = 10px
+ */
+html, body {
+  width: 100%;
+  height: auto;
+  font-size: 62.5%;
+}
+
+/** 
+ * 去掉点击屏幕的时候点击区域的显示
+ */
+a, img, button, input {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+/**  
+ * 去掉ie10的灰色背景
+ */
+a {
+  background-color: transparent;
+}
+
+/** 
+ * 设置部分元素在ie下面按块显示
+ * TODO: menu, hgroup, details, summary这部分标签的兼容设备覆盖率很低，如果覆盖率增高可以打开注释
+ */
+ 
+/*details（不显示详细） 定义描述文档或文档某个部分的细节，summary与之配合是标题显示[只兼容ios和chrome]*/
+/*menu 目前所有浏览器均不支持；*/
+/*main ie不支持*/
+/*figure文档中插图的图像，带有一个标题figcaption*/
+article, aside, figcaption, figure, footer, header, nav, section, main {
+  display: block;
+}
+
+/** 
+ * 兼容ie8.9让他们显示成行内块元素
+ * 设置Chrome, Firefox, Opera 元素放置在父元素的基线上
+ */
+audio, canvas, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/**  
+ * 设置标签加粗
+ */
+b, strong {
+  font-weight: bold;
+}
+
+/** 
+ * 去掉边框线，在ie8,9,10里面如果a标签包裹img会含有边框线 
+ */
+img {
+  border: 0;
+}
+
+/** 
+ * 突出显示的默认样式 
+ */
+mark {
+  background: #f6f6f6;
+  color: #000;
+}
+
+/** 
+ * 去掉a链接点击的时候外边框
+ */
+a:active, a:hover {
+  outline: 0;
+}
+
+/**  
+ * 统一不显示该元素
+ * opera,ie默认会显示该元素
+ */
+template {
+  display: none;
+}

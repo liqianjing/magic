@@ -1,0 +1,129 @@
+/*
+ * 左浮动 
+ */
+.float-l {
+  float: left;
+}
+
+/*
+ * 右浮动 
+ */
+.float-r {
+  float: right;
+}
+
+/*
+ * 清除浮动 
+ * 不兼容ie6，7
+ */
+.float-c:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  content: '';
+}
+
+/*
+ * 相对定位
+ */
+.position-r {
+  position: relative;
+}
+
+/*
+ * 绝对定位
+ */
+.position-a {
+  position: absolute;
+}
+
+/*
+ * 固定定位
+ */
+.position-f {
+  position: fixed;
+}
+
+/*
+ * 宽度设置为100% 
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.width-100 {
+  width: 100%;
+}
+
+/*
+ * 宽度设置为90% 
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.width-100 {
+  width: 90%;
+}
+
+/*
+ * 宽度设置为20% (这个一般在4列的时候会有20%的宽度和4%的边距)
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.width-20 {
+  width: 20%;
+}
+
+/*
+ * 宽度设置为30% (这个一般在3列的时候会有30%的宽度和2%的边距)
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.width-30 {
+  width: 30%;
+}
+
+/*
+ * 外边距4%
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.margin-4 {
+  margin-left: 4%;
+}
+
+/*
+ * 外边距2%
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.margin-2 {
+  margin-left: 2%;
+}
+
+/*
+ * 等分N列内容
+ * 如果设置这个里面的元素会
+ */
+.collection {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  flex-direction: column;
+}
+.collection .col-row {
+  -moz-box-flex: 1.0;
+  -webkit-box-flex: 1.0;
+  box-flex: 1.0;
+}
+
+/*
+ * 内边距和边框都会计算在宽高之内 
+ */
+.boxs-bor {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+/*
+ * 内边距和边框都会计算在宽高之外 
+ */
+.boxs-cont {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+} 
