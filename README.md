@@ -150,7 +150,7 @@ body {
   background: url(http://xxx/xxxx/xxx.png);
 }
 ```
-```
+``` css 
 /* 不推荐 */
 body {
   font-family: 'open sans', arial, sans-serif;
@@ -161,6 +161,7 @@ body {
         字体设置统一用英文的，不建议出现“微软雅黑”类似的设置
         mobile上面建议设置无衬字体
 对应表格如下：
+
 |字体           |  操作系统    |  Family Name      |
 | :------------ | :----------: | :---------------- |
 |宋体 (中易宋体)|Windows       | SimSun            |
