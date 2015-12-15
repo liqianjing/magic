@@ -1,39 +1,15 @@
-magic
+css规范：
 ----------
 
-### 文件目录
-> magic
->   >dist(完整的示例)
->   >   >build.min.css
-
->   >example(每个模块的示例页面)
->   >   >base.html
->   >   >font.html
-
->   >src（每个模块的css文件）
->   >   >font/font.css
->   >   >button/button.css
-
->   >.gitignore
->   >package.json
->   >gulpfile.js
->   >README.md
+### 文件规范
+> css
+>   > 基础样式
+>   > 通用ui样式
+>   > js的组件相关样式
+>   > 每一个项目单独的样式
 
 ### 注释规范
-- 首先需要有本区块的注释，建议增加使用场景
-``` css
-/* 
- * 完成4列等分的布局
- * 一般奖品展示的部分会用到
- * 注：这个class需要和下面子元素的class配合使用
- */
-```
-- 然后修改或增加原有的文件时，增加标注
-``` css 
-/* updata by xxx 2015/12/15 */
-/* 修改清除浮动的实现 */
-```
-- 成组的 css 规则间用块状注释和空行分离
+成组的 css 规则间用块状注释和空行分离
 ``` css 
 /* Header */
 
@@ -50,12 +26,14 @@ magic
 ### 命名规范
 - 一般的命名  
     使用小写字母+数字+中划线来命名，避免驼峰式和下划线的命名
-- id的命名  
-    因为这个是作为基础的样式文件提供，所以`禁止`使用id
+- id和class的命名  
+    名字的长短要适中，不能太长，使用有意义的类名
 - 简写属性的名字  
     简写类的名称需要是大家都默认的，例如btn，nav，bg但是不能用co等简写来命名
 - 前缀  
     为了防止冲突我们对于应用特定样式加上前缀，例如login-btn
+- hacks  
+    增加hack的时候应该加上浏览器的标识符号
 
 ### 书写规范
 - 属性的声明顺序
@@ -190,6 +168,23 @@ body {
   font-size: .8rem;
 }
 ```
+        
+- 字体设置
+        字体设置统一用英文的，不建议出现“微软雅黑”类似的设置;同时mobile上面建议设置无衬字体
+
+字体对应表格如下：
+
+|字体           |  操作系统    |  Family Name      |
+| :------------ | :----------: | :---------------- |
+|宋体 (中易宋体)|Windows       | SimSun            |
+|黑体 (中易黑体)|Windows       | SimHei            |
+|微软雅黑       |Windows       | Microsoft YaHei   |
+|微软正黑       |Windows       | Microsoft JhengHei|
+|华文黑体       |Mac/iOS       | STHeiti           |
+|冬青黑体       |Mac/iOS       | Hiragino Sans GB  |
+|文泉驿正黑     |Linux         | WenQuanYi Zen Hei |
+|文泉驿微米黑   |Linux         |WenQuanYi Micro Hei|
+
 
 - hack
         针对浏览器统一使用低版本hack，ie6统一用下划线`_`，ie7使用统一用`*`
