@@ -8,14 +8,30 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <title>base</title>
   <link rel="stylesheet" type="text/css" href="../src/base/base.css">
+  <style type="text/css">
+    table {
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+    }
+    table td {
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+    .form-list input{
+      height: 30px;
+    }
+  </style>
 </head>
 <body>
+  <!-- 去掉默认的边距 -->
   <header>i am header</header>
-  <ul>
-    <li>item 1</li>
-    <li>item 2</li>
-    <li>item 3</li>
-  </ul>
+  <!-- 去掉默认样式之后的列表 -->
+  <ol>
+    <li>ol 1</li>
+    <li>ol 2</li>
+    <li>ol 3</li>
+  </ol>
+  <!-- 去掉默认的边框线 -->
   <table>
     <thead>
       <tr>
@@ -30,7 +46,13 @@
         <td>mm</td>
         <td>0</td>
       </tr>
+      <tr>
+        <td>2</td>
+        <td>nn</td>
+        <td>1</td>
+      </tr>
     </tbody>
   </table>
+  <strong>加粗了哦</strong>
 </body>
 </html>

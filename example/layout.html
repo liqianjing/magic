@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>layout</title>
+  <link rel="stylesheet" type="text/css" href="../src/base/base.css">
+  <link rel="stylesheet" type="text/css" href="../src/default/default.css">
+  <link rel="stylesheet" type="text/css" href="../src/layout/layout.css">
+  <style type="text/css">
+    .menu {
+      height: 20px;
+      background: #c99aaf;
+    }
+    .main {
+      height: 20px;
+      background: #cff899;
+    }
+    .col-item {
+      height: 20px;
+      border: 1px solid #f00;
+      text-align: center;
+    }
+    .list li {
+      height: 20px;
+      text-align: center;
+      background: #cf7a99; 
+    }
+    .explace {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="explace">浮动布局兼容所有浏览器</p>
+  <nav class="nav l-floatc">
+    <p class="menu l-floatl l-width20"></p>
+    <p class="menu l-floatr l-width30"></p>
+  </nav>
+  <article class="main width-100"></article>
+
+  <p class="explace">等分布局只兼容高版本浏览器，建议在手机端使用(任意列)</p>
+  <ul class="l-collection">
+    <li class="col-item l-col-row">1</li>
+    <li class="col-item l-col-row">2</li>
+    <li class="col-item l-col-row">3</li>
+  </ul>
+
+  <p class="explace">等分布局兼容所有浏览器</p>
+  <ul class="list">
+    <li class="l-width20 l-margin4 l-floatl">a</li>
+    <li class="l-width20 l-margin4 l-floatl">b</li>
+    <li class="l-width20 l-margin4 l-floatl">c</li>
+    <li class="l-width20 l-margin4 l-floatl">c</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/**
+ * 这个文件不能和font-m.css文件一起使用
+ * 这个文件里面的文字全部是以px作为单位的
+ */
+.l-font12 {
+  font-size: 12px;
+}
+
+.l-font14 {
+  font-size: 14px;
+}
+
+.l-font16 {
+  font-size: 16px;
+}
+
+.l-font30 {
+  font-size: 30px;
+}
+
+.l-font50 {
+  font-size: 50px;
+}
+
+/*
+ * 设置文字加粗
+ */
+.l-fontw {
+  font-weight: bold;
+}

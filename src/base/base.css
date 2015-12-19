@@ -1,36 +1,76 @@
 /** 
  * 去掉常用标签的默认边距
  */
-html,body,div,p,span,a,img,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,header,footer,nav,section,article,video,button,input,table, td, tr {
+
+html,
+body,
+div,
+p,
+span,
+a,
+img,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+header,
+footer,
+nav,
+section,
+article,
+video,
+button,
+input,
+table,
+td,
+tr {
   padding: 0;
   margin: 0;
 }
 
+
 /** 
- * 去掉list的默认样式
+ * 去掉常用标签的默认边距
  */
-ol,ul,li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
-/** 
- * 去掉list的默认样式
- */
-input {
-  line-height: normal;
-}
 
 /** 
- * 去掉table的边框样式
+ * 为表格设置合并边框模型
+ * 设置默认的边距为0
  */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+
 /** 
- * 去掉table的边框样式
+ * 去掉默认的内边距
  */
-td,th {
+
+td,
+th {
   padding: 0;
+}
+
+
+/*
+ * 为strong标签设置为默认加粗 
+ */
+
+strong {
+  font-weight: bold;
 }

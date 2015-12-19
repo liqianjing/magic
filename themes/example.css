@@ -1,0 +1,117 @@
+.example {
+  color: #222;
+}
+
+.example a:hover {
+  color: #a4cdf0;
+}
+
+.example .e-head {
+  height: 190px;
+  background: #222;
+  color: #fff;
+}
+
+.example .e-head .e-icon {
+  right: 2rem;
+  top: 0;
+}
+
+.example .e-head .e-title {
+  top: 2rem;
+  left: 20%;
+}
+
+.example .e-head .e-subtitle {
+  top: 8rem;
+  left: 20%;
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.example .e-head .e-togitlab {
+  display: block;
+  top: 0;
+  right: 20%;
+  width: 145px;
+  height: 43px;
+  padding-left: 8px;
+  line-height: 43px;
+  color: #fff;
+  background: #2083d6;
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.example .e-exhibition {
+  margin: 3rem 10%;
+}
+
+.example .e-show {
+  padding: 2rem 0;
+  text-align: center;
+  border: 1px solid #8f908a;
+  border-radius: .5rem;
+  box-shadow: inset 0 0 10px #737373;
+}
+
+.example .e-exhibition button,
+.example .e-exhibition a {
+  margin: 1rem;
+}
+
+.example .e-mtitle {
+  line-height: 2.0;
+  font-size: 3rem;
+  color: #222;
+}
+
+.example .e-mtitle .e-icon {
+  top: 10px;
+  left: 132px;
+}
+
+.example .e-content {
+  padding: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #fff;
+  background: #222;
+  border-radius: .5rem; 
+}
+
+.example .e-content ol {
+  padding-left: 3.2rem;
+}
+
+.example .e-main {
+  margin-top: 3rem;
+}
+
+.example .e-code {
+  margin-top: 1rem;
+  padding: 4rem 2rem 2rem 2rem;
+  border: 1px solid #8f908a;
+  border-radius: .5rem; 
+}
+
+.example .e-code h4 {
+  top: 0;
+  left: 0;
+  padding: .5rem 1rem;
+  color: #fff;
+  font-size: 1.4rem;
+  background: #2083d6;
+  border-radius: .5rem 0 0 0;
+}
+
+.example .e-content .e-code-show,
+.example .e-code .e-code-show {
+  line-height: 1.8;
+  font-size: 1.6rem;
+  font-family: Arial;
+  color: #e6db74;
+  border-radius: .5rem;
+  background: #222;
+}

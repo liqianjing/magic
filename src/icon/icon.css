@@ -1,0 +1,226 @@
+/*
+ * 默认的图标外框
+ * 默认为40*40大小
+ */
+
+.l-icon {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+
+/*
+ * 房子的图标实现（默认40×40黑色）
+ */
+
+.l-icon-home1 {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.l-icon-home1:before,
+.l-icon-home1:after {
+  content: '';
+  height: 32px;
+  width: 4px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.l-icon-home1:after {
+  left: 25px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.l-icon-home2 {
+  width: 20px;
+  height: 16px;
+  display: block;
+  border: #fff solid;
+  border-width: 0 4px 4px 4px;
+  position: absolute;
+  top: 20px;
+  left: 6px;
+}
+
+.l-icon-home2:before {
+  content: '';
+  width: 7px;
+  height: 12px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+}
+
+.l-icon-home2:after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+
+
+/*
+ * 箭头图标的实现（默认40×40黑色）
+ */
+
+.l-icon-arrow {
+  width: 30px;
+}
+
+.l-icon-arrow:before {
+  content: '';
+  height: 0;
+  width: 0;
+  display: block;
+  border: 15px transparent solid;
+  border-bottom-width: 0;
+  border-top-color: #333;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.l-icon-arrow:after {
+  content: '';
+  height: 25px;
+  width: 10px;
+  display: block;
+  background: #333;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+
+/*
+ * 搜索的图标实现（默认40×40黑色）
+ */
+
+.l-icon-search:before,
+.l-icon-search:after {
+  content: '';
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.l-icon-search:before {
+  width: 20px;
+  border: 3px #333 solid;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.l-icon-search:after {
+  width: 7px;
+  background: #333;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  top: 17px;
+  left: 24px;
+}
+
+
+/*
+ * 设置小号的图标 
+ * 20*20
+ */
+
+.l-icon-small {
+  height: 20px;
+  width: 20px;
+}
+
+
+/*
+ * 小图标的搜索实现
+ */
+
+.l-icon-small.l-icon-search:before,
+.l-icon-small.l-icon-search:after {
+  height: 10px;
+}
+
+.l-icon-small.l-icon-search:before {
+  width: 10px;
+}
+
+.l-icon-small.l-icon-search:after {
+  width: 5px;
+  top: 11px;
+  left: 13px;
+}
+
+
+/*
+ * 小图标的下箭头实现
+ */
+
+.l-icon-small.l-icon-arrow:before {
+  border: 10px transparent solid;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+
+.l-icon-small.l-icon-arrow:after {
+  height: 16px;
+  width: 6px;
+  top: 0;
+  left: 7px;
+}
+
+
+/*
+ * 设置搜索图标为白色
+ */
+
+.l-icon-white.l-icon-search:before {
+  border: 3px solid #fff;
+}
+
+.l-icon-white.l-icon-search:after {
+  background: #fff;
+}
+
+
+/*
+ * 设置箭头图标为白色
+ */
+
+.l-icon-white.l-icon-arrow:before {
+  border: 10px transparent solid;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+}
+
+.l-icon-white.l-icon-arrow:after {
+  background: #fff;
+}

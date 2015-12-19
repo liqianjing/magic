@@ -1,0 +1,33 @@
+/**
+ * 这个文件不能和font-w.css文件一起使用
+ * 这个文件里面的文字全部是以rem作为单位的
+ * 换算依赖于default.css里面的body上面的文字的62.5%
+ * 1rem = 10px
+ */
+
+.l-font12 {
+  font-size: 1.2rem;
+}
+
+.l-font14 {
+  font-size: 1.4rem;
+}
+
+.l-font16 {
+  font-size: 1.6rem;
+}
+
+.l-font30 {
+  font-size: 3rem;
+}
+
+.l-font50 {
+  font-size: 5rem;
+}
+
+/*
+ * 设置文字加粗
+ */
+.l-fontw {
+  font-weight: bold;
+}

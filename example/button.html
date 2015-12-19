@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>button</title>
+  <link rel="stylesheet" type="text/css" href="../dist/build.css">
+  <link rel="stylesheet" type="text/css" href="../themes/example.css">
+</head>
+<body class="example">
+  <!-- 页头 -->
+  <header class="e-head l-width100 l-positionr">
+    <!-- 组件名称 -->
+    <h1 class="e-title l-positiona l-font50">button.css</h1>
+    <!-- 作用 -->
+    <h3 class="e-subtitle l-positiona l-font30">帮你写好按钮哦</h3>
+    <!-- 请把git源码地址放到这里 -->
+    <a href="" target="_blank" class="e-togitlab l-positiona l-font16 l-fontw">
+      了解更多
+      <i class="e-icon l-icon">
+        <span class="l-icon-home1"></span>
+        <span class="l-icon-home2"></span>
+      </i>
+    </a>
+  </header>
+
+  <!-- 最终效果展示（可选） -->
+  <div class="e-exhibition l-width80 l-margin10">
+    <h3 class="e-mtitle l-positionr">效果展示<i class="e-icon l-icon l-icon-arrow l-positiona"></i></h3>
+    <div class="e-show">
+      <button type="button" class="l-button l-button-pink l-button-mini">button</button>
+      <button type="button" class="l-button l-button-pink l-button-mini l-button-rounded">button</button>
+      <button type="button" class="l-button l-button-pink l-button-mini l-button-square">btn</button>
+      <button type="button" class="l-button l-button-pink l-button-mini l-button-square l-button-rounded">btn</button>
+      <br/>
+      
+      <button type="button" class="l-button l-button-green l-button-small">button</button>
+      <button type="button" class="l-button l-button-green l-button-small l-button-rounded">button</button>
+      <button type="button" class="l-button l-button-green l-button-small l-button-square">btn</button>
+      <button type="button" class="l-button l-button-green l-button-small l-button-square l-button-rounded">btn</button>
+      <br/>
+
+      <button type="button" class="l-button">button</button>
+      <button type="button" class="l-button l-button-rounded">button</button>
+      <button type="button" class="l-button l-button-square">btn</button>
+      <button type="button" class="l-button l-button-square l-button-rounded">btn</button>
+      <br/>
+
+      <button type="button" class="l-button l-button-blue l-button-large">button</button>
+      <button type="button" class="l-button l-button-blue l-button-large l-button-rounded">button</button>
+      <button type="button" class="l-button l-button-blue l-button-large l-button-square">btn</button>
+      <button type="button" class="l-button l-button-blue l-button-large l-button-square l-button-rounded">btn</button>
+      <br/>
+      
+      <button type="button" class="l-button l-button-large l-button-border">button</button>
+      <button type="button" class="l-button l-button-blue l-button-large l-button-border">button</button>
+      <button type="button" class="l-button l-button-green l-button-large l-button-border">btn</button>
+      <button type="button" class="l-button l-button-pink l-button-large l-button-border">btn</button>
+      <br/>
+
+      <button type="button" class="l-button l-button-icon"><i class="l-icon l-icon-small l-icon-search"></i>search</button>
+      <button type="button" class="l-button l-button-icon"><i class="l-icon l-icon-small l-icon-arrow"></i>load</button>
+      <button type="button" class="l-button l-button-blue l-button-icon"><i class="l-icon l-icon-small l-icon-white l-icon-search"></i>button</button>
+      <button type="button" class="l-button l-button-blue l-button-icon"><i class="l-icon l-icon-small l-icon-white l-icon-arrow"></i>button</button>
+    </div>
+    <br/>
+  </div>
+
+  <!-- 使用的基本说明，例如需要引入的资源 -->
+  <div class="e-introduces l-width80 l-margin10">
+    <h3 class="e-mtitle l-positionr">基本阐述<i class="e-icon l-icon l-icon-arrow l-positiona"></i></h3>
+    <ul class="e-content l-width100 l-boxbor">
+      <li class="e-cont-item">1.需要引用的模块
+        <template>
+          <link rel="stylesheet" type="text/css" href="../src/base/base.css">
+          <link rel="stylesheet" type="text/css" href="../src/default/default.css">
+          <link rel="stylesheet" type="text/css" href="../src/button/button.css">
+        </template>
+      </li>
+      <li class="e-cont-item">2.使用规则
+        <ol>
+          <li>a.使用标签没有硬性规定，但推荐使用button或者a标签</li>
+          <li>b.如果需要带有图标的按钮，请额外加载icon.css</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 代码实现（必选） -->
+  <section class="e-main l-width80 l-margin10">
+    <h3 class="e-mtitle l-positionr">示例展示<i class="e-icon l-icon l-icon-arrow l-positiona"></i></h3>
+    <div class="e-code l-positionr">
+      <h4 class="l-positiona">大小</h4>
+      <div class="e-mian-show">
+        <button type="button" class="l-button l-button-mini">btn</button>
+        <button type="button" class="l-button l-button-small">button</button>
+        <button type="button" class="l-button">button</button>
+        <button type="button" class="l-button l-button-large">button</button>
+      </div>
+      <template>
+        <!-- （示例图1） 增加 l-button-mini class实现最小的按钮-->
+        <button type="button" class="l-button l-button-mini">btn</button>
+
+        <!-- （示例图2）增加 l-button-small class实现小按钮-->
+        <button type="button" class="l-button l-button-small">button</button>
+
+        <!-- （示例图3）只有基础 l-button class默认的大小的按钮 -->
+        <button type="button" class="l-button">button</button>
+
+        <!-- （示例图4）增加 l-button-large class实现大按钮 -->
+        <button type="button" class="l-button l-button-large">button</button>
+      </template>
+    </div>
+
+    <div class="e-code l-positionr">
+      <h4 class="l-positiona">形状</h4>
+      <div class="e-mian-show">
+        <button type="button" class="l-button">btn</button>
+        <button type="button" class="l-button l-button-rounded">button</button>      
+        <button type="button" class="l-button l-button-square">btn</button>
+        <button type="button" class="l-button l-button-square l-button-rounded">btn</button>
+      </div>
+      <template>
+        <!-- （示例图1）默认为长方形的直角按钮 -->
+        <button type="button" class="l-button">btn</button>
+
+        <!-- （示例图2）增加 l-button-rounded 实现长方形的圆角按钮 -->
+        <button type="button" class="l-button l-button-rounded">button</button>
+
+        <!-- （示例图3）增加 l-button-square 实现正方形的直角按钮 -->
+        <button type="button" class="l-button l-button-square">btn</button>
+
+        <!-- （示例图4）增加 l-button-square l-button-rounded 实现正方形的圆角按钮 -->
+        <button type="button" class="l-button l-button-square l-button-rounded">btn</button>
+      </template>
+    </div>
+
+    <div class="e-code l-positionr">
+      <h4 class="l-positiona">颜色</h4>
+      <div class="e-mian-show">
+        <button type="button" class="l-button">btn</button>
+        <button type="button" class="l-button l-button-blue">button</button>
+        <button type="button" class="l-button l-button-green">btn</button>
+        <button type="button" class="l-button l-button-pink">btn</button>
+      </div>
+      <template>
+        <!-- （示例图1）默认为灰色按钮 -->
+        <button type="button" class="l-button">btn</button>
+
+        <!-- （示例图2）增加 l-button-blue 实现蓝色按钮 -->
+        <button type="button" class="l-button l-button-blue">button</button>
+
+        <!-- （示例图3）增加 l-button-green 实现绿色按钮 -->
+        <button type="button" class="l-button l-button-green">btn</button>
+
+        <!-- （示例图4）增加 l-button-pink 实现粉色按钮 -->
+        <button type="button" class="l-button l-button-pink">btn</button>
+      </template>
+    </div>
+
+    <div class="e-code l-positionr">
+      <h4 class="l-positiona">边框</h4>
+      <div class="e-mian-show">
+        <button type="button" class="l-button l-button-border">btn</button>
+        <button type="button" class="l-button l-button-blue l-button-border">button</button>
+        <button type="button" class="l-button l-button-green l-button-border">btn</button>
+        <button type="button" class="l-button l-button-pink l-button-border">btn</button>
+      </div>
+      <template>
+        <!-- 增加class l-button-border 为按钮添加边框 -->
+        <!-- 备注：不同颜色的按钮会有不同颜色的边框，建议搭配设置颜色的class -->
+
+        <button type="button" class="l-button l-button-border">btn</button>
+        <button type="button" class="l-button l-button-blue l-button-border">button</button>
+        <button type="button" class="l-button l-button-green l-button-border">btn</button>
+        <button type="button" class="l-button l-button-pink l-button-border">btn</button>
+      </template>
+    </div>
+  </section>
+
+  <!-- 多个模块拼接的效果 -->
+  <section class="e-tacked l-width80 l-margin10">
+    <h3 class="e-mtitle l-positionr">更多实现<i class="e-icon l-icon l-icon-arrow l-positiona"></i></h3>
+    <div class="e-code l-positionr">
+      <h4 class="l-positiona">混合完成图标按钮</h4>
+      <div class="e-mian-show">
+        <button type="button" class="l-button l-button-icon"><i class="l-icon l-icon-small l-icon-search"></i>search</button>
+        <button type="button" class="l-button l-button-icon"><i class="l-icon l-icon-small l-icon-arrow"></i>load</button>
+        <button type="button" class="l-button l-button-blue l-button-icon"><i class="l-icon l-icon-small l-icon-white l-icon-search"></i>button</button>
+        <button type="button" class="l-button l-button-blue l-button-icon"><i class="l-icon l-icon-small l-icon-white l-icon-arrow"></i>button</button>
+      </div>
+      <template>
+        <!-- 按钮上面增加l-button-icon这个class同时需要i标签放图标 -->
+
+        <!-- （示例图1）含有黑色搜索图标的按钮 l-icon-search -->
+        <button type="button" class="l-button l-button-icon">
+          <i class="l-icon l-icon-small l-icon-search"></i>
+          search
+        </button>
+
+        <!-- （示例图2）含有黑色箭头图标的按钮 l-icon-arrow -->
+        <button type="button" class="l-button l-button-icon">
+          <i class="l-icon l-icon-small l-icon-arrow"></i>
+          load
+        </button>
+
+        <!-- （示例图3）含有白色搜索图标的按钮 l-icon-white -->
+        <button type="button" class="l-button l-button-blue l-button-icon">
+          <i class="l-icon l-icon-small l-icon-white l-icon-search"></i>
+          button
+        </button>
+
+        <!-- （示例图4）含有白色箭头图标的按钮 -->
+        <button type="button" class="l-button l-button-blue l-button-icon">
+          <i class="l-icon l-icon-small l-icon-white l-icon-arrow"></i>
+          button
+        </button>
+      </template>
+    </div>
+  </section>
+
+  <!-- javascrpit -->
+  <script type="text/javascript" src="../themes/example.js"></script>
+</body>
+</html>

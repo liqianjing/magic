@@ -1,0 +1,235 @@
+/**
+ * 定义按钮的基本样式
+ */
+
+.l-button {
+  display: inline-block;
+  width: 10rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  color: #666;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background: #eee;
+  outline: none;
+}
+
+
+/**
+ * 含有icon的按钮默认向左移动20个像素
+ */
+
+.l-button-icon {
+  padding-left: 20px;
+}
+
+
+/*
+ * 标准大小图标的icon位置 
+ */
+
+.l-button-icon .l-icon {
+  margin-top: 13px;
+}
+
+
+/**
+ * 圆角定义
+ */
+
+.l-button-rounded {
+  border-radius: .5rem;
+}
+
+
+/**
+ * 背景变为蓝色
+ */
+
+.l-button-blue {
+  color: #fff;
+  background: #2083d6;
+}
+
+
+/**
+ * 背景变为粉色
+ */
+
+.l-button-pink {
+  color: #fff;
+  background: #de698c;
+}
+
+
+/**
+ * 背景变为绿色
+ */
+
+.l-button-green {
+  color: #fff;
+  background: #529c01;
+}
+
+
+/**
+ * 设置为最小尺寸的按钮
+ */
+
+.l-button-mini {
+  width: 6.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+}
+
+
+/**
+ * 设置为小按钮
+ */
+
+.l-button-small {
+  width: 7.6rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+}
+
+
+/**
+ * 设置按钮大小为最大
+ */
+
+.l-button-large {
+  width: 12.6rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.8rem;
+}
+
+
+/**
+ * 设置正方形的按钮
+ */
+
+.l-button-square {
+  width: 4rem;
+  height: 4rem;
+}
+
+
+/**
+ * 设置最小的正方形按钮
+ */
+
+.l-button-mini.l-button-square {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+
+/**
+ * 设置为小的正方形按钮
+ */
+
+.l-button-small.l-button-square {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+/**
+ * 设置为正方形的按钮
+ */
+
+.l-button-large.l-button-square {
+  width: 5rem;
+  height: 5rem;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（灰色）
+ */
+
+.l-button:hover {
+  background: #f4f2f2;
+  -webkit-box-shadow: 0 0 5px #dcdbdb inset;
+  -moz-box-shadow: 0 0 5px #dcdbdb inset;
+  box-shadow: 0 0 5px #dcdbdb inset;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（蓝色）
+ */
+
+.l-button-blue:hover {
+  background: #2d8edf;
+  -webkit-box-shadow: 0 0 5px #0766b5 inset;
+  -moz-box-shadow: 0 0 5px #0766b5 inset;
+  box-shadow: 0 0 5px #0766b5 inset;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（粉色）
+ */
+
+.l-button-pink:hover {
+  background: #e36e91;
+  -webkit-box-shadow: 0 0 5px #cc5176 inset;
+  -moz-box-shadow: 0 0 5px #cc5176 inset;
+  box-shadow: 0 0 5px #cc5176 inset;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（绿色）
+ */
+
+.l-button-green:hover {
+  background: #5aa706;
+  -webkit-box-shadow: 0 0 5px #478701 inset;
+  -moz-box-shadow: 0 0 5px #478701 inset;
+  box-shadow: 0 0 5px #478701 inset;
+}
+
+
+/**
+ * 为按钮设置边框
+ */
+
+.l-button-border {
+  border: 1px solid #cfcfcf;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（蓝色）
+ */
+
+.l-button-blue.l-button-border {
+  border: 1px solid #025da9;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（粉色）
+ */
+
+.l-button-pink.l-button-border {
+  border: 1px solid #b4385d;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（绿色）
+ */
+
+.l-button-green.l-button-border {
+  border: 1px solid #3e7601;
+}

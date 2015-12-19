@@ -1,43 +1,85 @@
 /** 
  * 去掉常用标签的默认边距
  */
-html,body,div,p,span,a,img,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,header,footer,nav,section,article,video,button,input,table, td, tr {
+
+html,
+body,
+div,
+p,
+span,
+a,
+img,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+header,
+footer,
+nav,
+section,
+article,
+video,
+button,
+input,
+table,
+td,
+tr {
   padding: 0;
   margin: 0;
 }
 
+
 /** 
- * 去掉list的默认样式
+ * 去掉常用标签的默认边距
  */
-ol,ul,li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
-/** 
- * 去掉list的默认样式
- */
-input {
-  line-height: normal;
-}
 
 /** 
- * 去掉table的边框样式
+ * 为表格设置合并边框模型
+ * 设置默认的边距为0
  */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+
 /** 
- * 去掉table的边框样式
+ * 去掉默认的内边距
  */
-td,th {
+
+td,
+th {
   padding: 0;
 }
+
+
+/*
+ * 为strong标签设置为默认加粗 
+ */
+
+strong {
+  font-weight: bold;
+}
+
 /** 
  * 移动端的默认使用无衬线字体sans-serif
  * 规定一个 aspect 值，这样就可以保持首选字体的 x-height
  */
+
 html {
   font-family: sans-serif;
   -moz-text-size-adjust: 100%;
@@ -45,101 +87,138 @@ html {
   text-size-adjust: 100%;
 }
 
+
 /**  
  * 默认为100%的宽度
  * 10号文字 完成后1rem = 10px
  */
-html, body {
+
+html,
+body {
   width: 100%;
   height: auto;
   font-size: 62.5%;
 }
 
+
 /** 
  * 去掉点击屏幕的时候点击区域的显示
  */
-a, img, button, input {
+
+a,
+img,
+button,
+input {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
 }
 
+
 /**  
  * 去掉ie10的灰色背景
  */
+
 a {
   background-color: transparent;
+  text-decoration: none;
 }
+
 
 /** 
  * 设置部分元素在ie下面按块显示
  * TODO: menu, hgroup, details, summary这部分标签的兼容设备覆盖率很低，如果覆盖率增高可以打开注释
  */
- 
 /*details（不显示详细） 定义描述文档或文档某个部分的细节，summary与之配合是标题显示[只兼容ios和chrome]*/
 /*menu 目前所有浏览器均不支持；*/
 /*main ie不支持*/
 /*figure文档中插图的图像，带有一个标题figcaption*/
-article, aside, figcaption, figure, footer, header, nav, section, main {
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+main {
   display: block;
 }
+
 
 /** 
  * 兼容ie8.9让他们显示成行内块元素
  * 设置Chrome, Firefox, Opera 元素放置在父元素的基线上
  */
-audio, canvas, video {
+
+audio,
+canvas,
+video {
   display: inline-block;
   vertical-align: baseline;
 }
 
+
 /**  
  * 设置标签加粗
  */
-b, strong {
+
+b,
+strong {
   font-weight: bold;
 }
+
 
 /** 
  * 去掉边框线，在ie8,9,10里面如果a标签包裹img会含有边框线 
  */
+
 img {
   border: 0;
 }
 
+
 /** 
  * 突出显示的默认样式 
  */
+
 mark {
   background: #f6f6f6;
   color: #000;
 }
 
+
 /** 
  * 去掉a链接点击的时候外边框
  */
-a:active, a:hover {
+
+a:active,
+a:hover {
   outline: 0;
 }
+
 
 /**  
  * 统一不显示该元素
  * opera,ie默认会显示该元素
  */
+
 template {
   display: none;
 }
+
 /*
  * 左浮动 
  */
-.float-l {
+.l-floatl {
   float: left;
 }
 
 /*
  * 右浮动 
  */
-.float-r {
+.l-floatr {
   float: right;
 }
 
@@ -147,7 +226,7 @@ template {
  * 清除浮动 
  * 不兼容ie6，7
  */
-.float-c:after {
+.l-floatc:after {
   clear: both;
   display: block;
   visibility: hidden;
@@ -159,21 +238,21 @@ template {
 /*
  * 相对定位
  */
-.position-r {
+.l-positionr {
   position: relative;
 }
 
 /*
  * 绝对定位
  */
-.position-a {
+.l-positiona {
   position: absolute;
 }
 
 /*
  * 固定定位
  */
-.position-f {
+.l-positionf {
   position: fixed;
 }
 
@@ -181,7 +260,7 @@ template {
  * 宽度设置为100% 
  * 后面的值是按照百分比计算的，例如100指的是100%
  */
-.width-100 {
+.l-width100 {
   width: 100%;
 }
 
@@ -189,15 +268,23 @@ template {
  * 宽度设置为90% 
  * 后面的值是按照百分比计算的，例如100指的是100%
  */
-.width-100 {
+.l-width90 {
   width: 90%;
+}
+
+/*
+ * 宽度设置为90% 
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.l-width80 {
+  width: 80%;
 }
 
 /*
  * 宽度设置为20% (这个一般在4列的时候会有20%的宽度和4%的边距)
  * 后面的值是按照百分比计算的，例如100指的是100%
  */
-.width-20 {
+.l-width20 {
   width: 20%;
 }
 
@@ -205,15 +292,23 @@ template {
  * 宽度设置为30% (这个一般在3列的时候会有30%的宽度和2%的边距)
  * 后面的值是按照百分比计算的，例如100指的是100%
  */
-.width-30 {
+.l-width30 {
   width: 30%;
+}
+
+/*
+ * 外边距10%
+ * 后面的值是按照百分比计算的，例如100指的是100%
+ */
+.l-margin10 {
+  margin-left: 10%;
 }
 
 /*
  * 外边距4%
  * 后面的值是按照百分比计算的，例如100指的是100%
  */
-.margin-4 {
+.l-margin4 {
   margin-left: 4%;
 }
 
@@ -221,7 +316,7 @@ template {
  * 外边距2%
  * 后面的值是按照百分比计算的，例如100指的是100%
  */
-.margin-2 {
+.l-margin2 {
   margin-left: 2%;
 }
 
@@ -229,13 +324,13 @@ template {
  * 等分N列内容
  * 如果设置这个里面的元素会
  */
-.collection {
+.l-collection {
   display: -moz-box;
   display: -webkit-box;
   display: box;
   flex-direction: column;
 }
-.collection .col-row {
+.l-collection .l-col-row {
   -moz-box-flex: 1.0;
   -webkit-box-flex: 1.0;
   box-flex: 1.0;
@@ -244,7 +339,7 @@ template {
 /*
  * 内边距和边框都会计算在宽高之内 
  */
-.boxs-bor {
+.l-boxbor {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -253,39 +348,504 @@ template {
 /*
  * 内边距和边框都会计算在宽高之外 
  */
-.boxs-cont {
+.l-boxcont {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 } 
-/*
- * 设置文字的大小，后面的数字是根据px规定的，会自动换算成rem的 
- * 依赖default.css里面的body上面的文字的62.5%
+/**
+ * 这个文件不能和font-w.css文件一起使用
+ * 这个文件里面的文字全部是以rem作为单位的
+ * 换算依赖于default.css里面的body上面的文字的62.5%
  * 1rem = 10px
  */
-.fonts-12 {
+
+.l-font12 {
   font-size: 1.2rem;
 }
 
-.fonts-14 {
+.l-font14 {
   font-size: 1.4rem;
 }
 
-.fonts-16 {
+.l-font16 {
   font-size: 1.6rem;
 }
 
-.fonts-30 {
+.l-font30 {
   font-size: 3rem;
 }
 
-.fonts-50 {
+.l-font50 {
   font-size: 5rem;
 }
 
 /*
  * 设置文字加粗
  */
-.fontw {
+.l-fontw {
   font-weight: bold;
+}
+
+/**
+ * 定义按钮的基本样式
+ */
+
+.l-button {
+  display: inline-block;
+  width: 10rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  color: #666;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background: #eee;
+  outline: none;
+}
+
+
+/**
+ * 含有icon的按钮默认向左移动20个像素
+ */
+
+.l-button-icon {
+  padding-left: 20px;
+}
+
+
+/*
+ * 标准大小图标的icon位置 
+ */
+
+.l-button-icon .l-icon {
+  margin-top: 13px;
+}
+
+
+/**
+ * 圆角定义
+ */
+
+.l-button-rounded {
+  border-radius: .5rem;
+}
+
+
+/**
+ * 背景变为蓝色
+ */
+
+.l-button-blue {
+  color: #fff;
+  background: #2083d6;
+}
+
+
+/**
+ * 背景变为粉色
+ */
+
+.l-button-pink {
+  color: #fff;
+  background: #de698c;
+}
+
+
+/**
+ * 背景变为绿色
+ */
+
+.l-button-green {
+  color: #fff;
+  background: #529c01;
+}
+
+
+/**
+ * 设置为最小尺寸的按钮
+ */
+
+.l-button-mini {
+  width: 6.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+}
+
+
+/**
+ * 设置为小按钮
+ */
+
+.l-button-small {
+  width: 7.6rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+}
+
+
+/**
+ * 设置按钮大小为最大
+ */
+
+.l-button-large {
+  width: 12.6rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.8rem;
+}
+
+
+/**
+ * 设置正方形的按钮
+ */
+
+.l-button-square {
+  width: 4rem;
+  height: 4rem;
+}
+
+
+/**
+ * 设置最小的正方形按钮
+ */
+
+.l-button-mini.l-button-square {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+
+/**
+ * 设置为小的正方形按钮
+ */
+
+.l-button-small.l-button-square {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+/**
+ * 设置为正方形的按钮
+ */
+
+.l-button-large.l-button-square {
+  width: 5rem;
+  height: 5rem;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（灰色）
+ */
+
+.l-button:hover {
+  background: #f4f2f2;
+  -webkit-box-shadow: 0 0 5px #dcdbdb inset;
+  -moz-box-shadow: 0 0 5px #dcdbdb inset;
+  box-shadow: 0 0 5px #dcdbdb inset;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（蓝色）
+ */
+
+.l-button-blue:hover {
+  background: #2d8edf;
+  -webkit-box-shadow: 0 0 5px #0766b5 inset;
+  -moz-box-shadow: 0 0 5px #0766b5 inset;
+  box-shadow: 0 0 5px #0766b5 inset;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（粉色）
+ */
+
+.l-button-pink:hover {
+  background: #e36e91;
+  -webkit-box-shadow: 0 0 5px #cc5176 inset;
+  -moz-box-shadow: 0 0 5px #cc5176 inset;
+  box-shadow: 0 0 5px #cc5176 inset;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（绿色）
+ */
+
+.l-button-green:hover {
+  background: #5aa706;
+  -webkit-box-shadow: 0 0 5px #478701 inset;
+  -moz-box-shadow: 0 0 5px #478701 inset;
+  box-shadow: 0 0 5px #478701 inset;
+}
+
+
+/**
+ * 为按钮设置边框
+ */
+
+.l-button-border {
+  border: 1px solid #cfcfcf;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（蓝色）
+ */
+
+.l-button-blue.l-button-border {
+  border: 1px solid #025da9;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（粉色）
+ */
+
+.l-button-pink.l-button-border {
+  border: 1px solid #b4385d;
+}
+
+
+/**
+ * 为按钮设置鼠标滑过效果（绿色）
+ */
+
+.l-button-green.l-button-border {
+  border: 1px solid #3e7601;
+}
+
+/*
+ * 默认的图标外框
+ * 默认为40*40大小
+ */
+
+.l-icon {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+
+/*
+ * 房子的图标实现（默认40×40黑色）
+ */
+
+.l-icon-home1 {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.l-icon-home1:before,
+.l-icon-home1:after {
+  content: '';
+  height: 32px;
+  width: 4px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 11px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.l-icon-home1:after {
+  left: 25px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.l-icon-home2 {
+  width: 20px;
+  height: 16px;
+  display: block;
+  border: #fff solid;
+  border-width: 0 4px 4px 4px;
+  position: absolute;
+  top: 20px;
+  left: 6px;
+}
+
+.l-icon-home2:before {
+  content: '';
+  width: 7px;
+  height: 12px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+}
+
+.l-icon-home2:after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+
+
+/*
+ * 箭头图标的实现（默认40×40黑色）
+ */
+
+.l-icon-arrow {
+  width: 30px;
+}
+
+.l-icon-arrow:before {
+  content: '';
+  height: 0;
+  width: 0;
+  display: block;
+  border: 15px transparent solid;
+  border-bottom-width: 0;
+  border-top-color: #333;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.l-icon-arrow:after {
+  content: '';
+  height: 25px;
+  width: 10px;
+  display: block;
+  background: #333;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+
+/*
+ * 搜索的图标实现（默认40×40黑色）
+ */
+
+.l-icon-search:before,
+.l-icon-search:after {
+  content: '';
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.l-icon-search:before {
+  width: 20px;
+  border: 3px #333 solid;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.l-icon-search:after {
+  width: 7px;
+  background: #333;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  top: 17px;
+  left: 24px;
+}
+
+
+/*
+ * 设置小号的图标 
+ * 20*20
+ */
+
+.l-icon-small {
+  height: 20px;
+  width: 20px;
+}
+
+
+/*
+ * 小图标的搜索实现
+ */
+
+.l-icon-small.l-icon-search:before,
+.l-icon-small.l-icon-search:after {
+  height: 10px;
+}
+
+.l-icon-small.l-icon-search:before {
+  width: 10px;
+}
+
+.l-icon-small.l-icon-search:after {
+  width: 5px;
+  top: 11px;
+  left: 13px;
+}
+
+
+/*
+ * 小图标的下箭头实现
+ */
+
+.l-icon-small.l-icon-arrow:before {
+  border: 10px transparent solid;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+
+.l-icon-small.l-icon-arrow:after {
+  height: 16px;
+  width: 6px;
+  top: 0;
+  left: 7px;
+}
+
+
+/*
+ * 设置搜索图标为白色
+ */
+
+.l-icon-white.l-icon-search:before {
+  border: 3px solid #fff;
+}
+
+.l-icon-white.l-icon-search:after {
+  background: #fff;
+}
+
+
+/*
+ * 设置箭头图标为白色
+ */
+
+.l-icon-white.l-icon-arrow:before {
+  border: 10px transparent solid;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+}
+
+.l-icon-white.l-icon-arrow:after {
+  background: #fff;
 }
